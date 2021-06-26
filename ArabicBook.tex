@@ -1,0 +1,55 @@
+%!TEX TS-program = xelatex
+
+\documentclass[a4paper,12pt]{book}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{quran,polyglossia}
+\usepackage{bidi}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tgbonum}
+\usepackage{setspace}
+
+\usepackage{lmodern}
+\usepackage{multirow}
+
+
+\include{chapters/init}
+
+\begin{document}
+	\frontmatter
+%	\maketitle
+	
+%\begin{dedication}
+%Dedicated to Calvin and Hobbes.
+%\end{dedication}
+
+
+%\tableofcontents
+%\listoffigures
+%\listoftables
+	
+	\mainmatter
+	
+%	\include{chapters/ch0}
+%	\include{chapters/ch_languages_template}
+%	\include{chapters/ch_template}
+	\include{chapters/ch1}
+	\include{chapters/ch2}
+	\include{chapters/ch3}
+
+\chapter{Quraan}
+%\setRTL
+\textarabic{\quransurah[111]}
+
+\textarabic{\quranayah[1][1]}
+ \\
+ 
+\textarabic{\quransurah*[108]}
+
+%\quransurahen[108]
+
+%	
+\end{document}
