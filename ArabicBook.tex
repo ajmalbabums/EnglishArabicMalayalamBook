@@ -4,7 +4,8 @@
 \usepackage{graphicx}
 \usepackage{geometry}
 \usepackage{hyperref}
-\usepackage{quran,polyglossia}
+\usepackage[trans={en}]{quran}
+\usepackage{polyglossia}
 \usepackage{bidi}
 
 \usepackage[T1]{fontenc}
@@ -36,20 +37,33 @@
 %	\include{chapters/ch0}
 %	\include{chapters/ch_languages_template}
 %	\include{chapters/ch_template}
-	\include{chapters/ch1}
-	\include{chapters/ch2}
-	\include{chapters/ch3}
+%	\include{chapters/ch1}
+	\include{chapters/en6b}
+%	\include{chapters/ch2}
+%	\include{chapters/ch3}
+%	\include{chapters/ch4}
 
+
+\end{document}
 \chapter{Quraan}
+\selectlanguage{arabic}
 %\setRTL
-\textarabic{\quransurah[111]}
-
-\textarabic{\quranayah[1][1]}
- \\
- 
-\textarabic{\quransurah*[108]}
-
+%\textarabic{\quransurah[111]}
+%
+%
+%\textarabic{\quranayah[1][1]}
+%
+% 
+%\textarabic{\quransurah*[108]}
+%
 %\quransurahen[108]
-
+%\quranayah[4][131][1-2]
+\quranayahen[1][5]
 %	
+
+%\quranayah[18][19][34-34]
+%
+%\quranayah[2][156][6]
+
+
 \end{document}
